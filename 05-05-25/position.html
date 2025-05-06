@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Position</h1>
+    <div class="container-wrapper">
+        <div class="container-group">
+            <div class="container">
+                <p>A propriedade position define como um elemento pode ser posicionado (renderizado) na página.
+                    Essa propriedade pode vir acompanhada de outras, tais como: top, right, bottom e left, que irão
+                    determinar como ficará a localização final do objeto.</p>
+                <ul>
+                    <li>Static: Faz o elemento ter um comportamento normal, que é o de manter sua posição atual
+                        no fluxo da página (padrão). O elemento é posicionado de acordo com o fluxo normal do
+                        documento. As propriedades top, right, left e bottom não têm efeito.</li>
+
+                    <li>Relative: O elemento é posicionado de acordo com o fluxo normal do documento, e, em
+                        seguida, deslocado em relação à própria base com os valores top, right, bottom e left.</li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <ul>
+                    <li>Absolute: Está posicionado em relação ao elemento que está contido. O elemento é removido do
+                        fluxo normal de documentos. Ele é posicionado em relação ao seu ancestral mais próximo, se
+                        houver posicionamento, caso contrário, ele é colocado em relação ao body. A sua posição final é
+                        determinada pelos valores de top, right, bottom e left.</li>
+                    <li>Fixed: irá fixar a posição do elemento na coordenada que você definir. A medida que a página é
+                        rolada, o elemento continua fixo na posição definida e o conteúdo da página rola normalmente.
+                        Ele está posicionado em relação ao viewport. Sua posição final é determinada pelos valores top,
+                        right, bottom e left.</li>
+                    <li>Sticky: é posicionado com base na posição de rolagem do usuário, alterna entre o fixo e o
+                        relativo,
+                        dependendo da posição de rolagem. Deve ser especificado pelo menos uma das posições top,
+                        right, bottom e left para que o posicionamento sticky funcione.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-group">
+            <div class="container">
+                <p>Exemplo de position static:</p>
+                <div class="static">
+                    <p>Static</p>
+                </div>
+            </div>
+            <div class="container">
+                <p>Exemplo de position relative:</p>
+                <div class="relative">
+                    <p>Relative</p>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 90px; align-self: flex-start;">
+                <p>Exemplo de position absolute:</p>
+                <div class="absolute">
+                    <p>Absolute</p>
+                </div>
+            </div>
+            <div class="container">
+                <p>Exemplo de position sticky:</p>
+                <div class="sticky">
+                    <p>Sticky</p>
+                </div>
+            <div class="container fixed">
+                <p>Exemplo de position fixed:</p>
+                <p style="background-color: lightblue; width: 50px;">Fixed</p>
+            </div>
+        </div>
+</body>
+
+</html>
