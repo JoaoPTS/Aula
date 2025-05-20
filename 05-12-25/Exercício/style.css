@@ -22,25 +22,34 @@ body {
     float: left;
     margin-right: 5px;
     padding: 5px;
-    background-color: #2b2b2b;
-    color: #f0f0f0;
-}
-
-.f_left:hover{
     background-color: #b7b7b7;
     color: #2b2b2b;
 }
 
-.f_left:active{
+.f_left:hover{
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+}
+
+.f_left.active{
     background-color: #1f1f1f;
     color: #f0f0f0;
+}
+
+a.f_left {
+    text-decoration: none;
 }
 
 .f_none {
     float: none;
 }
 
-.f_none p::first-letter {
+.f_none p:nth-child(odd)::first-letter{
     font-size: 2em;
     color: #00738d;
+
+}
+
+a{
+    color: #333;
 }
