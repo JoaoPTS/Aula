@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pseudo-Elementos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pseudo-Elementos</h1>
+    <p>Um pseudo-elemento é usado para definir um estilo especial para uma parte de um elemento.</p>
+    <p>Por exemplo:</p>
+    <ul>
+        <li>Estilizar a primeira linha de um elemento</li>
+        <li>Estilizar o primeiro caractere de um elemento</li>
+        <li>Adicionar conteúdo antes ou depois de um elemento</li>
+    </ul>
+    <p>Os pseudo-elementos são definidos com dois pontos (:) seguidos do nome do pseudo-elemento.</p>
+    <p>Exemplo:</p>
+    <p>p::first-line{propriedade:valor} (primeira linha de um elemento)</p>
+    <p>p::first-letter{propriedade:valor} (primeira letra de um elemento)</p>
+    <p>p::before{propriedade:valor} (antes do elemento)</p>
+    <p>p::after{propriedade:valor} (depois do elemento)</p>
+    <p>::selection{propriedade:valor} (seleciona o texto)</p>
+    <p>::marker{propriedade:valor} (estiliza o marcador de uma lista)</p>
+    <pre><code>
+    p::first-line {
+        color: red;
+        }
+    p::first-letter {
+        color: blue;
+        font-size: 2em;
+    }
+    p::before {
+        content: "Antes do parágrafo. ";
+        color: green;
+    }
+    p::after {
+        content: "Depois do parágrafo.";
+        color: green;
+    }
+    ::selection {
+        background: yellow;
+        color: red;
+    }
+    ::marker {
+        color: red;
+        font-size: 2em;
+    }
+    </code></pre>
+    <div class="pseudo-element">
+        <p>Lorem ipsum dolor sit amet. Est deleniti voluptatem ea obcaecati quia id itaque quaerat ea soluta officia ab
+            quia
+            amet et labore voluptatem ab corrupti deserunt. Ut dolor rerum et repudiandae distinctio ab obcaecati quia.
+            Et
+            quas voluptatem aut quia quibusdam quo facere aliquid. </p>
+        <ul>
+            <li>Et vero mollitia aut voluptas nemo id consequatur distinctio et optio totam. </li>
+            <li>Sed voluptas necessitatibus nam dolor provident! </li>
+            <li>Sed quis maiores et accusantium labore ut fuga quis qui laboriosam magnam? </li>
+            <li>Non culpa itaque qui iure inventore et natus aliquid sed explicabo nemo. </li>
+            <li>Aut unde dolores hic ipsam voluptas. </li>
+        </ul>
+        <ol>
+            <li>Hic enim ipsam eos tempora asperiores ut necessitatibus numquam eos inventore iusto. </li>
+            <li>Sit similique laborum id officia nesciunt et rerum sint. </li>
+            <li>Vel corporis rerum in galisum voluptas ab molestiae omnis ad molestiae voluptatem. </li>
+            <li>33 iure voluptatem et iste totam qui unde facilis. </li>
+            <li>Qui voluptas tempore non reprehenderit fugit eos maiores autem. </li>
+        </ol>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pseudo-Classes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pseudo-Classes</h1>
+    <p>Uma pseudo-classe é usada para definir um estado especial de um elemento.</p>
+    <p>Por exemplo:</p>
+    <ul>
+        <li>
+            Estilizar um elemento quando um usuário passar o mouse sobre ele
+        </li>
+        <li>
+            Links visitados e não visitados de forma diferente
+        </li>
+        <li>
+            Estilizar um elemento quando ele é focado
+        </li>
+    </ul>
+    <p>As pseudo-classes são definidas com dois pontos (:) seguidos do nome da pseudo-classe.</p>
+    <p>Exemplo:</p>
+    <pre><code>
+    p:hover {
+        color: red;
+    }
+    </code></pre>
+    <p>a:link{propriedade:valor} (em link não visitado)</p>
+    <p>a:visited{propriedade:valor} (em link visitado)</p>
+    <p>a:active{propriedade:valor} (em link já selecionado pelo usuário)</p>
+    <p>a:hover{propriedade:valor} (quando o mouse estiver sobre o elemento)</p>
+    <p>Exemplo:</p>
+    <pre><code>
+    a:link {
+        color: green;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:active {
+        color: red;
+    }
+    a:hover {
+        color: red;
+    }
+    </code></pre>
+    <a href="https://www.youtube.com">Referencia</a>
+    <p>a:first-child{propriedade:valor} (primeiro objeto de uma classe)</p>
+    <p>a:last-child{propriedade:valor} (ultimo objeto de uma classe)</p>
+    <p>a:nth-child(n){propriedade:valor} (n é um número que representa a posição do objeto, pode ser par ou impar
+        tambem)</p>
+    <p>Exemplo:</p>
+    <pre><code>
+    p:first-child {
+        color: red;
+    }
+
+    p:last-child {
+        color: blue;
+    }
+    p:nth-child(2) {
+        color: green;
+    }
+    </code></pre>
+    <div class="child">
+        <p>Referencia</p>
+        <p>Referencia</p>
+        <p>Referencia</p>
+        <p>Referencia</p>
+    </div>
+    <p>:not() (seleciona todos os elementos que não possuem a classe ou id especificado)</p>
+    <p>Exemplo:</p>
+    <pre><code>
+    p:not(.classe) {
+        color: red;
+    }
+    p:not(#id) {
+        color: blue;
+    }
+    ////////////////
+    p {
+        color; green
+    }
+
+    :not(p){
+        color: red;
+    }
+    </code></pre>
+    <div class="not">
+        <p>Referencia</p>
+        <p>Referencia</p>
+        <g>Referencia</g>
+    </div>
+
+</body>
+
+</html>
