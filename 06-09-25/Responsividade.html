@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Responsividade
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Propriedade Flex</h1>
+        <ul>
+            <li>Flex-Grow</li>
+            <li>Flex-Shrink</li>
+            <li>Flex-Basis</li>
+        </ul>
+    </div>
+    <div>
+        <h1>Propriedade Flex-Grow</h1>
+        <p>Define o quanto um item flexível pode crescer em relação aos outros itens flexíveis dentro do mesmo
+            contêiner.</p>
+        <p>Exemplo: <code>flex-grow: 1;</code></p>
+        <div>
+            <div class="flex-container">
+                <div class="flex-item" style="flex-grow: 1;">Item 1</div>
+                <div class="flex-item" style="flex-grow: 2;">Item 2</div>
+                <div class="flex-item" style="flex-grow: 1;">Item 3</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Propriedade Flex-Shrink</h1>
+        <p>Define o quanto um item flexível pode encolher em relação aos outros itens flexíveis dentro do mesmo
+            contêiner.</p>
+        <p>Exemplo: <code>flex-shrink: 1;</code></p>
+        <div>
+            <div class="flex-container">
+                <div class="flex-item" style="flex-shrink: 1;">Item 1</div>
+                <div class="flex-item" style="flex-shrink: 2;">Item 2</div>
+                <div class="flex-item" style="flex-shrink: 1;">Item 3</div>
+                <div class="flex-item" style="flex-shrink: 1;">Item 4</div>
+                <div class="flex-item" style="flex-shrink: 1;">Item 5</div>
+                <div class="flex-item" style="flex-shrink: 1;">Item 6</div>
+                <div class="flex-item" style="flex-shrink: 1;">Item 7</div>
+                <div class="flex-item" style="flex-shrink: 1;">Item 8</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Propriedade Flex-Basis</h1>
+        <p>Define o tamanho inicial de um item flexível antes que o espaço restante seja distribuído.</p>
+        <p>Exemplo: <code>flex-basis: 100px;</code></p>
+        <div>
+            <div class="flex-container">
+                <div class="flex-item" style="flex-basis: 100px;">Item 1</div>
+                <div class="flex-item" style="flex-basis: 200px;">Item 2</div>
+                <div class="flex-item" style="flex-basis: 150px;">Item 3</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
