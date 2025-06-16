@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Formulario - Exemplo
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Elemento Form</h1>
+        <p>
+            O elemento
+            &lt;form&gt; define o formulário que será utilizado
+            para coletar os dados. O formulário pode possuir diferentes
+            elementos, como campos de texto, checkboxs, radio buttons,
+            submit buttons, entre outros
+        </p>
+    </div>
+    <div>
+        <h2>Exemplo de Formulario:</h2>
+        <code>
+            &lt;form action="https://www.exemplo.com/submit" method="post"&gt;<br>
+            &nbsp;&nbsp;&lt;label for="nome"&gt;Nome:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;input type="text" id="nome" name="nome" required&gt;<br>
+            &nbsp;&nbsp;&lt;br&gt;<br>
+            &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;input type="email" id="email" name="email" required&gt;<br>
+            &nbsp;&nbsp;&lt;br&gt;<br>
+            &nbsp;&nbsp;&lt;input type="submit" value="Enviar"&gt;<br>
+            &lt;/form&gt;
+        </code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Input:</h3>
+        <p>O elemento &lt;input&gt; é utilizado para criar campos de entrada
+            de dados no formulário. Ele pode ter diferentes tipos, como
+            texto, email, senha, checkbox, radio, entre outros.</p>
+        <div>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <input type="submit" value="Enviar">
+            </form>
+            <code>&lt;input type="text" id="nome" name="nome" required&gt;</code>
+        </div>
+        <div>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Enviar">
+            </form>
+            <code>&lt;input type="email" id="email" name="email" required&gt;</code>
+        </div>
+        <div>
+            <form>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <input type="submit" value="Enviar">
+            </form>
+            <code>&lt;input type="password" id="senha" name="senha" required&gt;</code>
+        </div>
+    </div>
+</body>
+
+</html>
