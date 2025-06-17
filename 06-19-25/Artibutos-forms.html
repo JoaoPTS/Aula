@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Artibutos de formularios
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Atributos de Formulários</h1>
+        <p>Os atributos de formulários são usados para definir o comportamento e a aparência dos campos de entrada em um
+            formulário HTML.</p>
+    </div>
+    <div class="container">
+        <h2>Atributo Value</h2>
+        <p>Especifica um valor inicial para um campo</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" value="João Pedro">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Disabled</h2>
+        <p>Desabilita um campo de entrada, tornando-o não editável e não enviável</p>
+        <form>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" value="12345" disabled>
+            <br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Readonly</h2>
+        <p>Permite que o campo seja visualizado, mas não editado</p>
+        <form>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" value="12345" readonly>
+            <br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Size</h2>
+        <p>Define a largura do campo de entrada em número de caracteres</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" size="30">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Maxlength</h2>
+        <p>Limita o número máximo de caracteres que podem ser inseridos no campo</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" maxlength="10">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Minlength</h2>
+        <p>Define o número mínimo de caracteres que devem ser inseridos no campo</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" minlength="3">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Autocomplete</h2>
+        <p>Habilita ou desabilita o preenchimento automático do campo</p>
+        <form  autocomplete="on">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Max e Min</h2>
+        <p>Define os valores máximo e mínimo permitidos para campos numéricos</p>
+        <form>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" max="120">
+            <br>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" min="2020-01-01" max="2023-12-31">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Pattern</h2>
+        <p>Define uma expressão regular que o valor do campo deve corresponder</p>
+        <form>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Autofocus</h2>
+        <p>Define que o campo deve receber o foco automaticamente quando a página é carregada</p>
+        <code>
+            &lt;input type="text" id="nome" name="nome" autofocus&gt;
+        </code>
+    </div>
+    <div class="container">
+        <h2>Atributo Required</h2>
+        <p>Indica que o campo é obrigatório e deve ser preenchido antes do envio do formulário</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Atributo Placeholder</h2>
+        <p>Exibe um texto de dica dentro do campo de entrada quando ele está vazio</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>

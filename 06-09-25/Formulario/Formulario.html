@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <h1>Elemento Form</h1>
         <p>
             O elemento
@@ -22,7 +22,7 @@
             submit buttons, entre outros
         </p>
     </div>
-    <div>
+    <div class="container">
         <h2>Exemplo de Formulario:</h2>
         <code>
             &lt;form action="https://www.exemplo.com/submit" method="post"&gt;<br>
@@ -41,23 +41,19 @@
         <p>O elemento &lt;input&gt; é utilizado para criar campos de entrada
             de dados no formulário. Ele pode ter diferentes tipos, como
             texto, email, senha, checkbox, radio, entre outros.</p>
-        <div>
+        <div class="container">
             <form>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
                 <input type="submit" value="Enviar">
             </form>
             <code>&lt;input type="text" id="nome" name="nome" required&gt;</code>
-        </div>
-        <div>
             <form>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <input type="submit" value="Enviar">
             </form>
             <code>&lt;input type="email" id="email" name="email" required&gt;</code>
-        </div>
-        <div>
             <form>
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required>
@@ -65,6 +61,213 @@
             </form>
             <code>&lt;input type="password" id="senha" name="senha" required&gt;</code>
         </div>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Label:</h3>
+        <p>O elemento &lt;label&gt; é utilizado para associar um rótulo a um campo
+            de entrada. Ele melhora a acessibilidade e a usabilidade do formulário.</p>
+        <form>
+            <label for="nome" style="background-color: blue;">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;label for="nome"&gt;Nome:&lt;/label&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Button:</h3>
+        <p>O elemento &lt;button&gt; é utilizado para criar botões no formulário.
+            Ele pode ser usado para enviar o formulário ou executar outras ações.</p>
+        <div class="container">
+            <form>
+                <label for="Nome">Nome:</label>
+                <input type="text" id="Nome" name="Nome" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code>
+            <form>
+                <label for="Nome">Nome:</label>
+                <input type="text" id="Nome" name="Nome" required>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+            <code>&lt;button type="reset"&gt;Limpar&lt;/button&gt;</code>
+            <form>
+                <button type="button" onclick="alert('Botão clicado!')">Clique Aqui</button>
+            </form>
+            <code>&lt;button type="button" onclick="alert('Botão clicado!')"&gt;Clique Aqui&lt;/button&gt;</code>
+        </div>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Textarea:</h3>
+        <p>O elemento &lt;textarea&gt; é utilizado para criar um campo de texto
+            multilinha no formulário. Ele permite que o usuário insira texto longo.</p>
+        <form>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;textarea id="mensagem" name="mensagem" rows="4" cols="50" required&gt;&lt;/textarea&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Date</h3>
+        <p>O elemento &lt;input type="date"&gt; é utilizado para criar um campo
+            de entrada de data. Ele permite que o usuário selecione uma data
+            específica.</p>
+        <form>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;input type="date" id="data" name="data" required&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento DateTime-Local</h3>
+        <p>O elemento &lt;input type="datetime-local"&gt; é utilizado para criar
+            um campo de entrada de data e hora. Ele permite que o usuário selecione
+            uma data e hora específicas.</p>
+        <form>
+            <label for="dataHora">Data e Hora:</label>
+            <input type="datetime-local" id="dataHora" name="dataHora" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;input type="datetime-local" id="dataHora" name="dataHora" required&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Time:</h3>
+        <p>O elemento &lt;input type="time"&gt; é utilizado para criar um campo
+            de entrada de hora. Ele permite que o usuário selecione uma hora específica.</p>
+        <form>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;input type="time" id="hora" name="hora" required&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Month</h3>
+        <p>O elemento &lt;input type="month"&gt; é utilizado para criar um campo
+            de entrada de mês e ano. Ele permite que o usuário selecione um mês
+            e um ano específicos.</p>
+        <form>
+            <label for="mes">Mês:</label>
+            <input type="month" id="mes" name="mes" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;input type="month" id="mes" name="mes" required&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Radio Button</h3>
+        <p>O elemento &lt;input type="radio"&gt; é utilizado para criar botões
+            de opção. Ele permite que o usuário selecione uma única opção entre
+            várias disponíveis.</p>
+        <form>
+            <input type="radio" id="opcao1" name="opcao" value="opcao1" required>
+            <label for="opcao1">Opção 1</label>
+            <br>
+            <input type="radio" id="opcao2" name="opcao" value="opcao2">
+            <label for="opcao2">Opção 2</label>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;input type="radio" id="opcao1" name="opcao" value="opcao1" required&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Checkbox</h3>
+        <p>O elemento &lt;input type="checkbox"&gt; é utilizado para criar caixas
+            de seleção. Ele permite que o usuário selecione uma ou mais opções.</p>
+        <form>
+            <input type="checkbox" id="opcao1" name="opcao1" value="opcao1">
+            <label for="opcao1">Opção 1</label>
+            <br>
+            <input type="checkbox" id="opcao2" name="opcao2" value="opcao2">
+            <label for="opcao2">Opção 2</label>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;input type="checkbox" id="opcao1" name="opcao1" value="opcao1"&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Fieldset</h3>
+        <p>O elemento &lt;fieldset&gt; é utilizado para agrupar elementos de
+            formulário relacionados. Ele melhora a organização e a legibilidade
+            do formulário.</p>
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;fieldset&gt;&lt;legend&gt;Informações Pessoais&lt;/legend&gt;&lt;/fieldset&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Select</h3>
+        <p>O elemento &lt;select&gt; é utilizado para criar uma lista suspensa
+            de opções. Ele permite que o usuário selecione uma opção entre várias
+            disponíveis.</p>
+        <form>
+            <label for="opcoes">Opções:</label>
+            <select id="opcoes" name="opcoes" required>
+                <optgroup label="grupo 1">
+                    <option value="opcao1">Opção 1</option>
+                    <option value="opcao2">Opção 2</option>
+                    <option value="opcao3" selected>Opção 3</option>
+                </optgroup>
+                <optgroup label="grupo 2">
+                    <option value="grupo1-opcao1">Opção 4</option>
+                    <option value="grupo1-opcao2">Opção 5</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;select id="opcoes" name="opcoes" required&gt;&lt;/select&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Datalist</h3>
+        <p>O elemento &lt;datalist&gt; é utilizado para criar uma lista de opções
+            pré-definidas que podem ser sugeridas ao usuário enquanto ele digita
+            em um campo de entrada.</p>
+        <form>
+            <label for="frutas">Frutas:</label>
+            <input list="frutas" id="fruta" name="fruta" required>
+            <datalist id="frutas">
+                <option value="Maçã">
+                <option value="Banana">
+                <option value="Laranja">
+                <option value="Uva">
+            </datalist>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;datalist id="frutas"&gt;&lt;/datalist&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento Color</h3>
+        <p>O elemento &lt;input type="color"&gt; é utilizado para criar um campo
+            de entrada de cor. Ele permite que o usuário selecione uma cor específica.</p>
+        <form>
+            <label for="cor">Cor:</label>
+            <input type="color" id="cor" name="cor" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;input type="color" id="cor" name="cor" required&gt;</code>
+    </div>
+    <div class="form-container">
+        <h3>Elemento File</h3>
+        <p>O elemento &lt;input type="file"&gt; é utilizado para criar um campo
+            de entrada de arquivo. Ele permite que o usuário selecione um ou mais
+            arquivos para enviar.</p>
+        <form>
+            <label for="arquivo">Selecione um arquivo:</label>
+            <input type="file" id="arquivo" name="arquivo" required>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <code>&lt;input type="file" id="arquivo" name="arquivo" required&gt;</code>
     </div>
 </body>
 
